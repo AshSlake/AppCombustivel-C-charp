@@ -1,25 +1,112 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppCombustivel.MainPage">
+             x:Class="AppCombustivel.MainPage"
+             BackgroundColor="#F5F5F5">
 
     <ScrollView>
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            HorizontalOptions="Center"
+            VerticalOptions="Start"
+            Padding="30,20"
+            Spacing="10">
             <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
+                Source="abastecimento.jpeg"
+                HeightRequest="150"
                 Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
+                SemanticProperties.Description="carrão"
+                
+                />
 
-            <Label Text="Preço do Etanol:"/>
-            <Entry x:Name="txt_etanol" Placeholder="R$ "/>
+            <!-- Titulo -->
+            <Label 
+                Text="Calculadora de Combustivel"
+                FontSize="24"
+                FontAttributes="Bold"
+                TextColor="#333"
+                Margin="0,0,0,20"
+                />
 
-            <Label Text="Preço da Gasolina:"/>
-            <Entry x:Name="txt_gasolina" Placeholder="R$ "/>
+            <!-- Marca do Veiculo -->
+            <Label 
+                Text="Marca do Veiculo" 
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#333"
+                
+                />
+            <Picker  
+                x:Name="picker_marca"
+                Background="White"
+                TextColor="#333"
+                FontSize="16"
+                HeightRequest="40"
+                Margin="0,0,0,10"
+                />
 
-            <Button Text="Qual Comensa Mais?" Clicked="button_clicked"/>
+            <!--Modelo do Veiculo-->
+            <Label 
+                Text="Modelo do Veiculo"
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#333"
+               
+                />
+            <Entry 
+                x:Name="txt_modelo" 
+                Placeholder="Modelo do Veiculo" 
+                Background="White"
+                TextColor="#333"
+                FontSize="16"
+                HeightRequest="10"
+                Margin="0,0,0,10"
+                />
+
+            <!-- Ano do Veiculo -->
+            <Label 
+                Text="Preço do Etanol:" 
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#333"
+               
+                />
+            <Entry 
+                x:Name="txt_etanol" 
+                Placeholder="R$ " 
+                Background="White"
+                TextColor="#333"
+                FontSize="16"
+                HeightRequest="10"
+                Margin="0,0,0,10"
+                />
+
+            <!-- Ano do Veiculo -->
+            <Label 
+                Text="Preço da Gasolina:" 
+                FontSize="18"
+                FontAttributes="Bold"
+                TextColor="#333"/>
+
+            <Entry 
+                x:Name="txt_gasolina" 
+                Placeholder="R$ " 
+                Background="White"
+                TextColor="#333"
+                FontSize="16"
+                HeightRequest="10"
+                Margin="0,0,0,10"
+                />
+
+            <!-- Botão -->
+                <Button 
+                Text="Qual Comensa Mais?" 
+                Clicked="button_clicked" 
+                BackgroundColor="#007AFF"
+                TextColor="White"
+                FontSize="18"
+                CornerRadius="10"
+                HeightRequest="50"
+               />
 
         </VerticalStackLayout>
     </ScrollView>
