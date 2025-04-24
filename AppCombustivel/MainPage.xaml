@@ -54,6 +54,7 @@
                 />
             <Entry 
                 x:Name="txt_modelo" 
+                Keyboard="Numeric"
                 Placeholder="Modelo do Veiculo" 
                 Background="White"
                 TextColor="#333"
@@ -71,7 +72,8 @@
                
                 />
             <Entry 
-                x:Name="txt_etanol" 
+                x:Name="txt_etanol"
+                Keyboard="Numeric"
                 Placeholder="R$ " 
                 Background="White"
                 TextColor="#333"
@@ -88,7 +90,8 @@
                 TextColor="#333"/>
 
             <Entry 
-                x:Name="txt_gasolina" 
+                x:Name="txt_gasolina"
+                Keyboard="Numeric"
                 Placeholder="R$ " 
                 Background="White"
                 TextColor="#333"
